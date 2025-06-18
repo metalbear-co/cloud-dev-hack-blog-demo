@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Build and Debug",
+        "type": "go",
+        "request": "launch",
+        "mode": "exec",
+        "program": "${workspaceFolder}/local-app/__debug_bin",
+        "preLaunchTask": "build-go"
+      }
+    ],
+    "tasks": {
+      "version": "2.0.0",
+      "tasks": [
+        {
+          "label": "build-go",
+          "type": "shell",
+          "command": "cd ${workspaceFolder}/local-app && go build -gcflags=\"all=-N -l\" -o __debug_bin"
+        }
+      ]
+    }
+  }
