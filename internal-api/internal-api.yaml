@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: internal-api
-          image: <your-dockerhub-username>/internal-api:latest
+          image: ghcr.io/metalbear-co/cloud-dev-hack-blog-internal-api:latest
           ports:
             - containerPort: 8080
 ---
